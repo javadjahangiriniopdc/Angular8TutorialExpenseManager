@@ -9,19 +9,21 @@ import { ExpenseEntry } from '../expense-entry';
 export class ExpenseEntryComponent implements OnInit {
 
   title: string;
-    expenseEntry: ExpenseEntry
+    expenseEntries: ExpenseEntry
   constructor() { }
 
   ngOnInit(): void {
     this.title = "Expense Entry";
-    this.expenseEntry = {
-         id: 1,
-         item: "Pizza",
-         amount: 21,
-         category: "Food",
-         location: "Zomato",
-         spendOn: new Date(2020, 6, 1, 10, 10, 10), createdOn: new Date(2020, 6, 1, 10, 10, 10),
-      };
+    // this.expenseEntry = {
+    //      id: 1,
+    //      item: "Pizza",
+    //      amount: 21,
+    //      category: "Food",
+    //      location: "Zomato",
+    //      spendOn: new Date(2020, 6, 1, 10, 10, 10), createdOn: new Date(2020, 6, 1, 10, 10, 10),
+    //   };
+
+
   }
 
 }
